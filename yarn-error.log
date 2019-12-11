@@ -1,0 +1,47 @@
+Arguments: 
+  /Users/takki/.nvm/versions/node/v11.12.0/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/takki/.nvm/versions/node/v11.12.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/takki/blog/package.json: Unexpected token } in JSON at position 321
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs",
+      "deploy": "bash deploy.sh"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "vuepress": "^0.14.10",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
