@@ -74,6 +74,7 @@ function getBasicSidebar() {
       title: arguments[3],
       collapsable: false,
       children: addPath('/Vue/', [
+        'new Vue',
         '响应式原理',
         '路由',
         '生命周期',
