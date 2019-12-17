@@ -35,4 +35,4 @@
 
 > Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠
 
-<iframe width="100%" height="300" src="//jsfiddle.net/takki/vngacez5/6/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/takki/sm0n27h6/6/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>

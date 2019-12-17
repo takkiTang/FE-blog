@@ -1,10 +1,16 @@
-# FE Docs
-
-这里是 takki 的博客,更多的是平时整理的知识,知识分以下几类：
-
-- [HTML](/html/语义化.md)
-- [CSS](/css/盒模型.md)
-- [JavaScript](/JavaScript/原型.md)
-- [Vue](/vue/响应式原理.md)
-- [浏览器](/browser/浏览器渲染过程.md)
-- [算法](/algorithm/sort.md)
+---
+home: true
+lang: zh-CN
+heroText: FE Docs
+heroImage: /img/logo.png
+actionText: 快速开始 →
+actionLink: /fe/
+features:
+  - title: Blog
+    details: 专注写作前端博客，记录日常所得。
+  - title: Content
+    details: 以前端知识为主，扩展到算法、HTTP。
+  - title: For Me
+    details: 两年前端,有PC后台、小程序开发经验,目前人在上海。
+footer: MIT Licensed | Copyright © 2019-present Takki
+---

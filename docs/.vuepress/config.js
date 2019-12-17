@@ -13,102 +13,139 @@ module.exports = {
     lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
+    lastUpdated: '上次更新时间',
+    nav: [{
+      text: 'Home',
+      link: '/'
+    }, {
+      text: "前端",
+      link: '/fe/'
+    }, {
+      text: 'Vue源码分析',
+      link: '/vuesource/'
+    }, {
+      text: 'Leetcode',
+      link: '/leetcode/'
+    }, {
+      text: 'HTTP',
+      link: '/http/'
+    }],
     sidebar: {
-      '/': getBasicSidebar('HTML', 'CSS', 'JavaScript', 'vue', '浏览器', '算法','HTTP')
+      '/fe/': [
+        '',
+        {
+          title: 'HTML',
+          collapsable: false,
+          children: addPath('/fe/html/', [
+            '语义化',
+            'meta',
+          ])
+        },
+        {
+          title: 'CSS',
+          collapsable: false,
+          children: addPath('/fe/css/', [
+            'bfc',
+            'flex',
+            // 'grid',
+            'position',
+            '两栏布局',
+            '水平垂直居中',
+            '盒模型',
+            'em rem',
+            'none',
+          ])
+        },
+        {
+          title: 'JavaScript',
+          collapsable: false,
+          children: addPath('/fe/js/', [
+            '数据类型和数据结构',
+            '原型',
+            '继承',
+            'new',
+            'this',
+            '闭包',
+            'ajax',
+            'asyncawait',
+            'call',
+            'class',
+            'let',
+            'map',
+            'promise',
+            '函数防抖',
+            '数组去重',
+            '数组扁平化',
+            '模块化',
+            '深拷贝',
+            '箭头函数',
+          ])
+        },
+        {
+          title: 'Vue',
+          collapsable: false,
+          children: addPath('/fe/vue/', [
+            'new Vue',
+            '响应式原理',
+            '路由',
+            '生命周期',
+            '自定义指令',
+            '组件通信',
+            '计算属性 VS 侦听属性',
+            'Virtual DOM',
+            'nextTick'
+          ])
+        },
+        {
+          title: '浏览器',
+          collapsable: false,
+          children: addPath('/fe/browser/', ['浏览器渲染过程', '跨域', 'eventLoop', '事件模型', 'xss', 'csrf', '持久化', '性能优化'])
+        },
+        {
+          title: '常见代码',
+          collapsable: false,
+          children: addPath('/fe/algorithm/', [
+            'sort',
+            'dfs bfs',
+            '柯里化函数'
+          ])
+        },
+      ],
+      '/leetcode/': [{
+        title: 'LeetCode',
+        collapsable: false,
+        children: addPath('/leetcode/', [
+          ''
+        ])
+      }],
+      '/vuesource/': [
+        '',
+        {
+          title: 'Vue 源码分析',
+          collapsable: false,
+          children: addPath('/vuesource/', [
+            '1'
+          ])
+        }
+      ],
+      '/http': [{
+        title: 'HTTP',
+        collapsable: false,
+        children: addPath('/http/', [
+          '',
+          '304'
+        ])
+      }]
+    }
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@alias': 'path/to/some/dir'
+      }
     }
   }
 }
-
-function getBasicSidebar() {
-
-  return [{
-      title: arguments[0],
-      collapsable: false,
-      children: addPath('/html/', [
-        '语义化',
-        'meta',
-      ])
-    },
-    {
-      title: arguments[1],
-      collapsable: false,
-      children: addPath('/css/', [
-        'bfc.md',
-        'flex.md',
-        // 'grid.md',
-        'position.md',
-        '两栏布局.md',
-        '水平垂直居中.md',
-        '盒模型.md',
-        'em rem.md',
-        'none.md',
-      ])
-    },
-    {
-      title: arguments[2],
-      collapsable: false,
-      children: addPath('/JavaScript/', [
-        '数据类型和数据结构.md',
-        '原型.md',
-        '继承.md',
-        'new.md',
-        'this.md',
-        '闭包.md',
-        'ajax.md',
-        'asyncawait.md',
-        'call.md',
-        'class.md',
-        'let.md',
-        'map.md',
-        'promise.md',
-        '函数防抖.md',
-        '懒加载.md',
-        '数组去重.md',
-        '数组扁平化.md',
-        '模块化.md',
-        '深拷贝.md',
-        '箭头函数.md',
-      ])
-    },
-    {
-      title: arguments[3],
-      collapsable: false,
-      children: addPath('/Vue/', [
-        'new Vue',
-        '响应式原理',
-        '路由',
-        '生命周期',
-        '自定义指令',
-        '组件通信',
-        '计算属性 VS 侦听属性',
-        'Virtual DOM',
-        'nextTick'
-      ])
-    },
-    {
-      title: arguments[4],
-      collapsable: false,
-      children: addPath('/browser/', ['浏览器渲染过程', '跨域', 'eventLoop', '事件模型', 'xss', 'csrf', '持久化', '性能优化'])
-    },
-    {
-      title: arguments[5],
-      collapsable: false,
-      children: addPath('/algorithm/', [
-        'sort',
-        'dfs bfs',
-        '柯里化函数'
-      ])
-    },
-    {
-      title: arguments[6],
-      collapsable: false,
-      children: addPath('/http/', [
-        '304',
-      ])
-    }
-  ]
-}
-
 
 function addPath(path, pathArr) {
   return pathArr.map(item => {
