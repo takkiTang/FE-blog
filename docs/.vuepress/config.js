@@ -124,7 +124,10 @@ module.exports = {
           title: 'Vue 源码分析',
           collapsable: false,
           children: addPath('/vuesource/', [
-            '1'
+            '1',
+            '2',
+            '3',
+            '4'
           ])
         }
       ],
