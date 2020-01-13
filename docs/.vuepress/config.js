@@ -24,9 +24,6 @@ module.exports = {
       text: 'Vue源码分析',
       link: '/vuesource/'
     }, {
-      text: 'Leetcode',
-      link: '/leetcode/'
-    }, {
       text: 'HTTP',
       link: '/http/'
     }],
@@ -111,13 +108,6 @@ module.exports = {
           ])
         },
       ],
-      '/leetcode/': [{
-        title: 'LeetCode',
-        collapsable: false,
-        children: addPath('/leetcode/', [
-          ''
-        ])
-      }],
       '/vuesource/': [
         '',
         {
