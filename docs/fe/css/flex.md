@@ -1,10 +1,17 @@
 # flex
 
+## 基本概念
+
+Flex 的结构构成：
+- Flex Container 
+- Flex Item
+
 ![flex](/img/flex.png)
 
-- 主轴是依靠 flex-direction 和 所有子元素在主轴方向上的 item-size 的总和确定的，flex-direction 这个属性可以控制子元素的排列方向和排列顺序。
 
-- 侧轴是依靠 flex-wrap 和 所有子元素在主轴方向上的 item-size 的总和确定的，flex-wrap 可以控制子元素 在侧轴方向上的排列方式以及顺序。
+- 主轴是依靠 `flex-direction` 和 所有子元素在主轴方向上的 `item-size` 的总和确定的，`flex-direction` 这个属性可以控制子元素的排列方向和排列顺序。
+
+- 侧轴是依靠 `flex-wrap` 和 所有子元素在主轴方向上的 `item-size` 的总和确定的，`flex-wrap` 可以控制子元素 在侧轴方向上的排列方式以及顺序。
 
 | 作用在 flex 容器上               | 作用在 flex 子项上 |
 | -------------------------------- | ------------------ |
