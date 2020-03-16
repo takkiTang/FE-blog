@@ -48,6 +48,7 @@ module.exports = {
             'position',
             '两栏布局',
             '水平垂直居中',
+            '等间隙卡片布局',
             '盒模型',
             'em rem',
             'none',

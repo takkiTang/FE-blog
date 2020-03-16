@@ -9,3 +9,5 @@ Vue 在更新 DOM 时是**异步**执行的
 如果**同一个 watcher** 被多次触发，只会被 **推入到队列中一次**。这种在缓冲时去除重复数据对于避免不必要的**计算**和 **DOM 操作**是非常重要的。然后，在下一个的事件循环“tick”中，Vue 刷新队列并执行实际 (已去重的) 工作
 
 Vue 在内部对异步队列尝试使用原生的 `Promise.then`、`MutationObserver`(监视对DOM树所做更改的能力) 和 `setImmediate`，如果执行环境不支持，则会采用 `setTimeout(fn, 0)` 代替。
+
+**Vue 2.6降级方案 Promise.then > MutationObserver > setImmediate > setTimeout**
