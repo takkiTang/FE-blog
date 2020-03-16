@@ -104,7 +104,8 @@ module.exports = {
           children: addPath('/fe/algorithm/', [
             'sort',
             'dfs bfs',
-            '柯里化函数'
+            '柯里化函数',
+            'fib'
           ])
         },
       ],
