@@ -128,7 +128,7 @@ module.exports = {
         collapsable: false,
         children: addPath('/http/', [
           '',
-          '304',
+          'http cache',
           'TCPIP 分层'
         ])
       }]
