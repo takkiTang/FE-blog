@@ -72,6 +72,7 @@ module.exports = {
             'map',
             'promise',
             '函数防抖',
+            'eventHub',
             '数组去重',
             '数组扁平化',
             '模块化',
