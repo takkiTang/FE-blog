@@ -1,4 +1,4 @@
-# opacity: 0、visibility: hidden、display: none
+# 属性 opacity: 0、visibility: hidden、display: none 的区别
 
 - display：none 的子孙节点消失，这是由于元素从渲染树中消失造成，visibility:hidden 会子孙节点消失是由于继承性，可以设置 visibility：visible 让子孙节点显示；（场景，显示出原来这里不存在的结构）
 - display：none 不占据任何空间；visibility：hidden 仍占据空间；（场景：显示不会导致页面结构发生变动，不会撑开）

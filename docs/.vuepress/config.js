@@ -43,14 +43,14 @@ module.exports = {
           collapsable: false,
           children: addPath('/fe/css/', [
             'bfc',
-            'flex',
+            'box',
             // 'grid',
             'position',
-            '两栏布局',
+            'flex',
+            'units',
             '水平垂直居中',
+            'twoCol',
             '等间隙卡片布局',
-            '盒模型',
-            'em rem',
             'none',
           ])
         },
